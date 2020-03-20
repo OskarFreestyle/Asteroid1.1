@@ -45,7 +45,6 @@ public:
 	inline Vector2D operator-(const Vector2D &v) const {
 		return Vector2D(x_ - v.x_, y_ - v.y_);
 	}
-
 	inline Vector2D operator+(const Vector2D &v) const {
 		return Vector2D(x_ + v.x_, y_ + v.y_);
 	}

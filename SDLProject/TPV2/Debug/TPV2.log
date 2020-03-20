@@ -1,1 +1,18 @@
-﻿G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\TPV2.vcxproj(161,5): warning MSB4011: "G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\SDLProject.props" no se puede volver a importar. Ya se importó en "G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\TPV2.vcxproj (160,5)". Lo más probable es que se trate de un error al crear la compilación. Se omitirá esta importación. 
+﻿C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\TPV2.vcxproj(161,5): warning MSB4011: "C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\SDLProject.props" no se puede volver a importar. Ya se importó en "C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\TPV2.vcxproj (160,5)". Lo más probable es que se trate de un error al crear la compilación. Se omitirá esta importación. 
+  PacMan.cpp
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(58,81): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(58,70): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(59,81): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(59,70): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\PacManSystem.h(49,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+  RenderSystem.cpp
+  main.cpp
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\PacManSystem.h(50,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(58,81): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(58,70): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(59,81): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(59,70): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\PacManSystem.h(49,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+  Generando código...
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\PacManSystem.h(50,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+  TPV2.vcxproj -> C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\bin\TPV2Debug.exe

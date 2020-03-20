@@ -4,8 +4,7 @@
 #include "Component.h"
 
 struct Transform: Component {
-	Transform(Vector2D pos, Vector2D vel, double width, double height,
-			double rotation) :
+	Transform(Vector2D pos, Vector2D vel, double width, double height, double rotation) :
 			Component(ecs::Transform), //
 			position_(pos), //
 			velocity_(vel), //
@@ -25,7 +24,6 @@ struct Transform: Component {
 	{
 	}
 	
-
 	Vector2D position_;
 	Vector2D velocity_;
 	double width_;

@@ -22,9 +22,34 @@ public:
 		Transform *tr = e->getComponent<Transform>(ecs::Transform);
 		ImageComponent *img = e->getComponent<ImageComponent>(ecs::ImageComponent);
 		SDL_Rect dest =
-		RECT(tr->position_.getX(), tr->position_.getY(), tr->width_,
-				tr->height_);
+		RECT(tr->position_.getX(), tr->position_.getY(), tr->width_, tr->height_);
 		img->tex_->render(dest, tr->rotation_);
+	}
+
+	void drawAsteroid(Entity* e) {
+		Transform* tr = e->getComponent<Transform>(ecs::Transform);
+		ImageComponent* img = e->getComponent<ImageComponent>(ecs::ImageComponent);
+		SDL_Rect dest = RECT(tr->position_.getX(), tr->position_.getY(), tr->width_, tr->height_);
+		img->tex_->render(dest, tr->rotation_);
+
+		//CONDICION 1 (sale por la derecha de la pantalla)
+		if (tr->position_.getX() + tr->width_ > game_->getWindowWidth()) {
+			SDL_Rect rectCond1 = RECT(tr->position_.getX() - game_->getWindowWidth(), tr->position_.getY(), tr->width_, tr->height_);
+			img->tex_->render(rectCond1, tr->rotation_);
+		}
+
+		//CONDICION 2 (sale por abajo)
+		if (tr->position_.getY() + tr->height_ > game_->getWindowHeight()) {
+			SDL_Rect rectCond2 = RECT(tr->position_.getX(), tr->position_.getY() - game_->getWindowHeight(), tr->width_, tr->height_);
+			img->tex_->render(rectCond2, tr->rotation_);
+		}
+
+		//CONDICION 3 (1 y 2 a la vez)
+		if ((tr->position_.getX() + tr->width_ > game_->getWindowWidth()) && (tr->position_.getY() + tr->height_ > game_->getWindowHeight())) {
+			SDL_Rect rectCond3 = RECT(tr->position_.getX() - game_->getWindowWidth(), tr->position_.getY() - game_->getWindowHeight(), tr->width_, tr->height_);
+			img->tex_->render(rectCond3, tr->rotation_);
+		}
+
 	}
 
 	void draw(Entity* e,SDL_Rect clip) {
@@ -47,15 +72,9 @@ public:
 	}
 
 	void update() override {
-
-		// draw stars
-		/*for (auto &e : mngr_->getGroupEntities(ecs::_grp_Star)) {
-			draw(e);
-		}*/
-
 		// draw asteroids
 		for (auto& e : mngr_->getGroupEntities(ecs::_grp_Asteroid)) {
-			draw(e);
+			drawAsteroid(e);
 		}
 
 		//Draw bullets

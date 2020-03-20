@@ -1,55 +1,92 @@
-﻿G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\TPV2.vcxproj(161,5): warning MSB4011: "G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\SDLProject.props" no se puede volver a importar. Ya se importó en "G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\TPV2.vcxproj (160,5)". Lo más probable es que se trate de un error al crear la compilación. Se omitirá esta importación. 
+﻿C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\TPV2.vcxproj(171,5): warning MSB4011: "C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\SDLProject.props" no se puede volver a importar. Ya se importó en "C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\TPV2.vcxproj (170,5)". Lo más probable es que se trate de un error al crear la compilación. Se omitirá esta importación. 
+  AsteroidLifeTime.cpp
   AsteroidPool.cpp
   AsteroidsSystem.cpp
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(34,67): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(34,61): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(35,49): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(35,43): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(58,81): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(58,70): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(59,81): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+  AudioManager.cpp
+  BulletPool.cpp
+  BulletSystem.cpp
+  Collisions.cpp
   CollisionSystem.cpp
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(34,67): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(34,61): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(35,49): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(35,43): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(59,70): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(58,81): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(58,70): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(59,81): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(59,70): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\FighterSystem.h(62,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+  DefFactory.cpp
   Entity.cpp
+  FighterGun.cpp
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\FighterSystem.h(63,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\FighterSystem.h(62,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
   FigtherSystem.cpp
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\FighterSystem.h(52,9): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\FighterSystem.h(53,9): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\FighterSystem.h(63,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\FighterSystem.h(62,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+  Font.cpp
+  FontsManager.cpp
   GameCtrlSystem.cpp
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(34,67): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(34,61): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(35,49): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(35,43): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\FighterSystem.h(63,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(58,81): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(58,70): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(59,81): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+  Health.cpp
+  InputHandler.cpp
+  jute.cpp
   main.cpp
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(34,67): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(34,61): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(35,49): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(35,43): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\PacManSystem.h(49,9): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\PacManSystem.h(50,9): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\FighterSystem.h(52,9): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\FighterSystem.h(53,9): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(59,70): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(58,81): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(58,70): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(59,81): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(59,70): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\FighterSystem.h(62,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\FighterSystem.h(63,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\PacManSystem.h(49,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
   Manager.cpp
+  Generando código...
+  Compilando...
+  ObjectFactory.cpp
+  ObjectPool.cpp
+  OFFacotry.cpp
   PacMan.cpp
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(34,67): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(34,61): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(35,49): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(35,43): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\PacManSystem.h(49,9): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\PacManSystem.h(50,9): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\FighterSystem.h(52,9): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\FighterSystem.h(53,9): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\PacManSystem.h(50,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(58,81): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(58,70): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(59,81): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\AsteroidsSystem.h(59,70): warning C4244:  'argumento': conversión de 'const double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\FighterSystem.h(62,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\FighterSystem.h(63,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\PacManSystem.h(49,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
   PacManSystem.cpp
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\PacManSystem.h(49,9): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\TPV2\PacManSystem.h(50,9): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\PacManSystem.h(50,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\PacManSystem.h(49,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+  RandomNumberGenerator.cpp
   RenderSystem.cpp
   Resources.cpp
+  SDLAudioManager.cpp
+  SDLFontsManager.cpp
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\PacManSystem.h(50,9): warning C4244:  'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\SDLFontsManager.cpp(38,19): warning C4267:  'argumento': conversión de 'size_t' a 'const int'; posible pérdida de datos
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\SDLFontsManager.cpp(47,26): warning C4267:  'argumento': conversión de 'size_t' a 'const int'; posible pérdida de datos
   SDLGame.cpp
+  SDLTexturesManager.cpp
+  sdl_macros.cpp
+  Singleton.cpp
+  SRandBasedGenerator.cpp
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\SDLFontsManager.cpp(50,13): warning C4267:  'argumento': conversión de 'size_t' a 'const int'; posible pérdida de datos
   StarsPool.cpp
   StarsSystem.cpp
   System.cpp
-  Transform.cpp
+  Texture.cpp
+  TexturesManager.cpp
   Generando código...
-     Creando biblioteca G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\bin\TPV2Debug.lib y objeto G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\bin\TPV2Debug.exp
+  Compilando...
+  Transform.cpp
+  Vector2D.cpp
+  Generando código...
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\TPV2\SRandBasedGenerator.cpp(11,8): warning C4244:  'inicializando': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+     Creando biblioteca C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\bin\TPV2Debug.lib y objeto C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\bin\TPV2Debug.exp
 Font.obj : error LNK2019: símbolo externo TTF_OpenFont sin resolver al que se hace referencia en la función "public: bool __cdecl Font::load(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)" (?load@Font@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z)
 Font.obj : error LNK2019: símbolo externo TTF_RenderText_Solid sin resolver al que se hace referencia en la función "public: struct SDL_Surface * __cdecl Font::renderText(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,struct SDL_Color)const " (?renderText@Font@@QEBAPEAUSDL_Surface@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@USDL_Color@@@Z)
 Font.obj : error LNK2019: símbolo externo TTF_CloseFont sin resolver al que se hace referencia en la función "public: void __cdecl Font::close(void)" (?close@Font@@QEAAXXZ)
@@ -101,10 +138,10 @@ Texture.obj : error LNK2019: símbolo externo SDL_RenderCopyEx sin resolver al q
 Texture.obj : error LNK2019: símbolo externo SDL_DestroyTexture sin resolver al que se hace referencia en la función "public: void __cdecl Texture::close(void)" (?close@Texture@@QEAAXXZ)
 Texture.obj : error LNK2019: símbolo externo IMG_Load sin resolver al que se hace referencia en la función "public: bool __cdecl Texture::loadFromImg(struct SDL_Renderer *,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?loadFromImg@Texture@@QEAA_NPEAUSDL_Renderer@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
 MSVCRTD.lib(exe_main.obj) : error LNK2019: símbolo externo main sin resolver al que se hace referencia en la función "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\SDL2-2.0.7\lib\x86\SDL2.lib : warning LNK4272: el tipo de máquina de biblioteca 'x86' está en conflicto con el tipo de máquina de destino 'x64'
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\SDL2-2.0.7\lib\x86\SDL2main.lib : warning LNK4272: el tipo de máquina de biblioteca 'x86' está en conflicto con el tipo de máquina de destino 'x64'
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\SDL2_image-2.0.1\lib\x86\SDL2_image.lib : warning LNK4272: el tipo de máquina de biblioteca 'x86' está en conflicto con el tipo de máquina de destino 'x64'
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\SDL2_ttf-2.0.14\lib\x86\SDL2_ttf.lib : warning LNK4272: el tipo de máquina de biblioteca 'x86' está en conflicto con el tipo de máquina de destino 'x64'
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\SDL2_mixer-2.0.2\lib\x86\SDL2_mixer.lib : warning LNK4272: el tipo de máquina de biblioteca 'x86' está en conflicto con el tipo de máquina de destino 'x64'
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\SDL2_net-2.0.1\lib\x86\SDL2_net.lib : warning LNK4272: el tipo de máquina de biblioteca 'x86' está en conflicto con el tipo de máquina de destino 'x64'
-G:\2do\2doCuatrimestre\TPV2\practicas\Asteroid1.1\SDLProject\bin\TPV2Debug.exe : fatal error LNK1120: 48 externos sin resolver
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\SDL2-2.0.7\lib\x86\SDL2.lib : warning LNK4272: el tipo de máquina de biblioteca 'x86' está en conflicto con el tipo de máquina de destino 'x64'
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\SDL2-2.0.7\lib\x86\SDL2main.lib : warning LNK4272: el tipo de máquina de biblioteca 'x86' está en conflicto con el tipo de máquina de destino 'x64'
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\SDL2_image-2.0.1\lib\x86\SDL2_image.lib : warning LNK4272: el tipo de máquina de biblioteca 'x86' está en conflicto con el tipo de máquina de destino 'x64'
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\SDL2_ttf-2.0.14\lib\x86\SDL2_ttf.lib : warning LNK4272: el tipo de máquina de biblioteca 'x86' está en conflicto con el tipo de máquina de destino 'x64'
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\SDL2_mixer-2.0.2\lib\x86\SDL2_mixer.lib : warning LNK4272: el tipo de máquina de biblioteca 'x86' está en conflicto con el tipo de máquina de destino 'x64'
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\SDL2_net-2.0.1\lib\x86\SDL2_net.lib : warning LNK4272: el tipo de máquina de biblioteca 'x86' está en conflicto con el tipo de máquina de destino 'x64'
+C:\Users\Oskar\Desktop\Asteroid1.1\SDLProject\bin\TPV2Debug.exe : fatal error LNK1120: 48 externos sin resolver

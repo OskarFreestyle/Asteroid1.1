@@ -6,6 +6,10 @@
 #include "ImageComponent.h"
 #include "BulletSystem.h"
 
+const int IMPULSE = 10;
+const int ANGLE_VEL = 10;
+const double DECREASE_VEL = 0.97;
+
 class FighterSystem :
 	public System
 {
@@ -19,10 +23,8 @@ public:
 	//Inicializa al fighter
 	void init() override {
 		fighter_ = mngr_->addEntity();
-		tr_ = fighter_->addComponent<Transform>(Vector2D(100.0, 100), Vector2D(),
-			50, 50, 0);
-		fighter_->addComponent<ImageComponent>(
-			game_->getTextureMngr()->getTexture(Resources::Fighter));
+		tr_ = fighter_->addComponent<Transform>(Vector2D(100.0, 100), Vector2D(), 50, 50, 0);
+		fighter_->addComponent<ImageComponent>(game_->getTextureMngr()->getTexture(Resources::Fighter));
 		mngr_->setHandler(ecs::_hdlr_Fighter, fighter_);
 	}
 
@@ -35,40 +37,45 @@ public:
 	}
 
 	void update() override {
-		auto ih = InputHandler::instance();
+		InputHandler* ih = InputHandler::instance();
 		assert(tr_ != nullptr);
 		if (ih->keyDownEvent()) {
 			if (ih->isKeyDown(SDLK_RIGHT)) {
-				tr_->rotation_ = tr_->rotation_ + 10;
-				tr_->velocity_ = tr_->velocity_.rotate(10);
+				tr_->rotation_ += ANGLE_VEL;
 			}
 			else if (ih->isKeyDown(SDLK_LEFT)) {
-				tr_->rotation_ = tr_->rotation_ - 10;
-				tr_->velocity_ = tr_->velocity_.rotate(-10);
+				tr_->rotation_ -= ANGLE_VEL;
 			}
-			else if (ih->isKeyDown(SDLK_UP)) {
-				auto nv = Vector2D(0, -1).rotate(tr_->rotation_);
-				tr_->velocity_ = nv * (tr_->velocity_.magnitude() + 0.5);
+			else if (ih->isKeyDown(SDLK_UP)) {	//Impulso * cos(ang) = x y sin = y
+				tr_->velocity_.set(Vector2D({ IMPULSE * sin(M_PI * tr_->rotation_ / 180.0f), -(IMPULSE * cos(M_PI * tr_->rotation_ / 180.0)) }));
 			}
-			else if (ih->isKeyDown(SDLK_DOWN)) {
-				auto nv = Vector2D(0, -1).rotate(tr_->rotation_);
-				tr_->velocity_ = nv
-					* std::max(0.0, (tr_->velocity_.magnitude() - 0.5));
-			}
-
 		}
-		//Aceleración del fighter
-		tr_->position_ = tr_->position_ + tr_->velocity_;
-		int x = tr_->position_.getX();
-		int y = tr_->position_.getY();
-
-		//Para el rebote con los bordes del juego
-		if (x <= 0 || x + tr_->width_ >= game_->getWindowWidth() || y <= 0
-			|| y + tr_->height_ >= game_->getWindowHeight()) {
-			tr_->rotation_ = fmod(tr_->rotation_ + 180.0, 360.0);
-			tr_->velocity_ = tr_->velocity_.rotate(180);
+		else {
+			if ((tr_->velocity_.getX() != 0.0) || (tr_->velocity_.getY() != 0.0)) {
+				tr_->velocity_.set(Vector2D({ DECREASE_VEL * tr_->velocity_.getX(), DECREASE_VEL * tr_->velocity_.getY() }));
+			}
+		}
+		
+		//Sale por los laterales
+		if (tr_->position_.getX() < 0.0 || tr_->position_.getX() + tr_->width_ > game_->getWindowWidth()) {
+			tr_->velocity_.set(-tr_->velocity_.getX(), tr_->velocity_.getY());		//Se cambia la velocidad
+			tr_->rotation_ = -tr_->rotation_;										//Se cambia la rotación	
+			//Se evita que se quede fuera de los límites de la pantalla (BUG)
+			if (tr_->position_.getX() < 0.0) tr_->position_.set(0.0, tr_->position_.getY());
+			else if (tr_->position_.getX() > game_->getWindowWidth()) tr_->position_.set(game_->getWindowWidth(), tr_->position_.getY());
 		}
 
+		//Sale por los extremos
+		if (tr_->position_.getY() < 0.0 || tr_->position_.getY() + tr_->height_ > game_->getWindowHeight()) {
+			tr_->velocity_.set(tr_->velocity_.getX(), -tr_->velocity_.getY());		//Se cambia la velocidad
+			tr_->rotation_ = (180 - tr_->rotation_);								//Se cambia la rotación
+			//Se evita que se quede fuera de los límites de la pantalla (BUG)
+			if (tr_->position_.getY() < 0.0) tr_->position_.set(tr_->position_.getX(), 0.0);
+			else if (tr_->position_.getY() > game_->getWindowHeight()) tr_->position_.set(tr_->position_.getX(), game_->getWindowHeight());
+		}
+
+		tr_->position_.setX(tr_->position_.getX() + tr_->velocity_.getX());
+		tr_->position_.setY(tr_->position_.getY() + tr_->velocity_.getY());
 	}
 	const Transform* getTranform() { return tr_; };
 private:
